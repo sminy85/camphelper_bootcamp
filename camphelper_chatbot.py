@@ -1,5 +1,5 @@
 # from openai import OpenAI
-#     client = OpenAI(api_key="sk-proj-HQzNqn5FXKhcYHxpFvnWT3BlbkFJDWWSL0vqU9XPVcMDJ26A")
+#     client = OpenAI(api_key="")
 
 #     completion = client.chat.completions.create(
 #     model="gpt-3.5-turbo",
@@ -11,7 +11,7 @@
 
 #     print(completion.choices[0].message)
 
-#sk-proj-HQzNqn5FXKhcYHxpFvnWT3BlbkFJDWWSL0vqU9XPVcMDJ26A
+#
 
 
 # import os
@@ -21,7 +21,7 @@
 # from langchain_community.document_loaders import TextLoader
 # from langchain.indexes import VectorstoreIndexCreator
 
-# os.environ["OPENAI_API_KEY"] = "sk-proj-HQzNqn5FXKhcYHxpFvnWT3BlbkFJDWWSL0vqU9XPVcMDJ26A"
+# os.environ["OPENAI_API_KEY"] = ""
 # query = sys.argv[1]
 # loader = TextLoader('data.txt' )
 # index = VectorstoreIndexCreator().from_loaders([loader])
@@ -32,7 +32,7 @@ from openai import OpenAI
 import os
 import json
 
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", "sk-proj-HQzNqn5FXKhcYHxpFvnWT3BlbkFJDWWSL0vqU9XPVcMDJ26A"))
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
 
 
 # Example OpenAI Python library request
